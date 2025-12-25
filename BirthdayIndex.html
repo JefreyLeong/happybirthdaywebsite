@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+	<title>Happy Birthday!</title>
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="text">
+			<h1>Happy Birthday!</h1>
+			<p>Wishing you a wonderful birthday filled with joy, laughter, and the company of people you love.</p>
+			<p>May your year ahead be full of new adventures, warm memories, and all the success you deserve.</p>
+			<p><u>BLOW</u> the candle for a surprise!!!</p>
+			<p class="signature">— With love and best wishes</p>
+			<div class="controls">
+				<button id="startButton" onclick="startMeasuringVolume()">Blow Candle</button>
+			</div>
+		</div>
+		<div class="video">
+			<video id="video" width="510" height="510" autoplay muted loop>
+				<source src="cake base looping.mp4" type="video/mp4" />
+				Your browser does not support the video tag.		
+			</video>
+		    <div class="volume-meter">
+            	<div class="volume-bar" id="volumeBar"></div>
+            	<div class="threshold-line"></div>
+        	</div>
+		</div>
+	</div>
+	<script src="function.js"></script>
+</body>
+</html>
+
