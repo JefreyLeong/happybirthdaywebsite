@@ -160,3 +160,8 @@ button:active:after {
 	.container { flex-direction: column; }
 	.cake img { max-width: 100%; width: auto; }
 }
+
+@media (max-width: 680px) {
+	.container { flex-direction: column; }
+	.cake img { max-width: 100%; width: auto; }
+}
