@@ -40,12 +40,18 @@ u {
 }
 
 .controls {
-	text-align: right;
+	text-align: center;
+	column-gap: 20px;
+}
+
+.video video{
+	pointer-events: none;
 }
 
 .video {
-	pointer-events: none;
-	gap: 20px;
+  display: flex;
+  flex-direction: column;
+	gap: 10px;
 }
 
 .volume-meter {
@@ -146,6 +152,11 @@ button:active:after {
 
 
 @media (max-width: 680px) {
+  .body { padding: 20px; }
+  .video  {
+    column-gap: 20px;
+    align-items: center;
+  }
 	.container { flex-direction: column; }
 	.cake img { max-width: 100%; width: auto; }
 }
